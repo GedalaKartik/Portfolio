@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body,html
+        {
+            background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("The\ Ultimate\ List\ of\ Best\ Free\ Tools\ &\ Resources\ for\ Front-End\ Web\ Developers.jfif");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 1450px; 
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* border-bottom:10px solid blue; */
+        }
+        #navbar
+        {
+            display: flex;
+            width: 100%;
+            height: 80px;
+            border-bottom:6px solid rgb(171, 171, 255);
+            align-items: center;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            /* background-color: rgb(168, 72, 168);  */
+        }
+        #namesec
+        {
+            margin-left: 40px;
+        }
+        #aboutme
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 865px;
+            margin-top: 60px;
+            margin-left: 250px;
+            gap:10px;
+        }
+        img
+        {
+            height: 297px;
+            float: left;
+        }
+        #contentaboutmepara
+        {
+            font-size: 22px;
+            line-height: 1.5;
+            color:white;
+        }
+        table
+        {
+          margin-top: 10px;
+          /* border: 1px solid black;   */
+          width: 865px;
+        }
+        td
+        {
+            color: white;
+            /* border: 1px solid black;  */
+            padding: 5px 5px 5px 5px;
+            font-size: 20px;
+        }
+        th
+        {
+            /* border: 1px solid black; */
+            font-size: 20px;
+            color: white;
+        }
+        #additionaldetails
+        {
+            display: grid;
+            grid-template-columns: 265px 265px 265px;
+            /* grid-template-rows: 300px 300px; */
+            gap:10px;
+            padding: 10px;
+            width: 865px;
+            justify-content: center;
+            margin-top: 10px;
+            margin-left: 230px;
+        }
+        .additionaldetailitem
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center; 
+            padding: 5px 5px 5px 5px;
+            border: 3px solid  rgb(171, 171, 255);
+            border-radius: 10px;
+            height: 250px;
+        }
+        .additionaldetailitem li
+        {
+            color: white;
+            font-size: 17px;
+        }
+        .additionaldetailitem h3
+        {
+            color: white;
+        }
+        .additionaldetailitem a
+        {
+            color: white;
+            font-size: 17px;
+            text-decoration: none;
+        }
+        .faq-answer
+        {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in ;
+        }
+        .faq-input:checked~.faq-answer
+        { 
+            max-height: 100px;
+            transition: max-height 0.5s ease-out;
+        }
+        .faq-answer p
+        {
+            border: 1px solid chartreuse;
+            background-color: brown;
+            color: aliceblue;
+        }
+        .faq-input
+        {
+            display: none;
+        }
+        .navitems
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        .navitems label
+        {
+            color: yellow;
+            font-size:larger ;
+        }
+        .navitems label:hover
+        {
+            color: white
+        }
+        .additionaldetailitem a:hover
+        {
+            color: yellow;
+        }
+        img
+        {
+            width: 250px;
+            margin-left: 520px;
+            border: 6px solid rgb(171, 171, 255);
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="namesec">
+            <p style="font-weight: bold;font-size:x-large;color: rgb(255, 143, 24);">GEDALA&nbsp;&nbsp;KARTIK</p>
+            <p style="font-size: larger;color: yellow;">B.Tech CSE</p>
+        </div>    
+        <div style="margin-left: 200px; display: flex;">
+            <div class="navitems">
+                <input type="checkbox" id="q1" class="faq-input"><label for="q1" class="faq-question">Phone_no</label>
+                <div class="faq-answer">
+                    <p>+91-8984493899</p>
+                </div>
+            </div>    
+            <div class="navitems" style="margin-left: 50px;">
+                <a href="https://www.linkedin.com/in/gedala-kartik-9b089a2b7/"><label for="q2" class="faq-question">Linkedin</label></a>
+             </div>
+            <div class="navitems" style="margin-left: 100px;">
+                <a href="https://github.com/GedalaKartik"><label for="q3" class="faq-question">Github</label></a>
+            </div>
+            <div class="navitems" style="margin-left: 100px;">
+                <input type="checkbox" id="q4" class="faq-input"><label for="q4" class="faq-question">Gmail</label>
+                <div class="faq-answer">
+                    <p>gkartik369@gmail.com</p>
+                </div>
+            </div>
+            <div class="navitems">
+                <input type="checkbox" id="q5" class="faq-input"><label for="q5" class="faq-question">Address</label>
+                <div class="faq-answer">
+                    <p>Berhampur(Odisha),India</p>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <img src="passport-Photoroom.png">
+    <div id="aboutme">
+            <h1 style="color:rgb(171, 171, 255);margin-left: 350px;">About</h1>
+            <hr style="background-color:rgb(171, 171, 255);height: 6px;border: none;">
+            <p id="contentaboutmepara">I am a B.Tech CSE student with expertise in machine learning, computer vision, and full-stack development
+            using MERN technologies.Alongside, I possess a solid foundation in data structures and algorithms (DSA) and
+            proficiency in programming languages like C, C++, Java, and Python. I am a progressive individual who prioritizes
+            the process over the results, believing that if the process is strong, success will naturally follow.I learn from my mistakes and strive not to repeat them, always focusing on continuous improvement and growth.</p>
+    </div>
+    <div id="aboutme">
+        <h1 style="color: rgb(171, 171, 255);margin-left: 340px;">Education</h1>
+        <hr style="background-color:rgb(171, 171, 255);height: 6px;border: none;">
+    <table>
+        <tr>
+                <th>S.no</th>
+                <th>Degree</th>
+                <th>Institute/Board</th>
+                <th>Cgpa/Percentage</th>
+                <th>Passing Year</th>
+        </tr>
+        <tr>
+                <td>1</td>
+                <td>B.Tech</td>
+                <td>NIST University</td>
+                <td>9.20</td>
+                <td>2025</td>
+        </tr>
+        <tr>
+                <td>2</td>
+                <td>Intermediate</td>
+                <td>Binayak Acharya College/CHSE</td>
+                <td>72%</td>
+                <td>2020</td>
+        </tr>
+        <tr>
+                <td>3</td>
+                <td>Matric</td>
+                <td>NIOS</td>
+                <td>67%</td>
+                <td>2018</td>
+        </tr>
+    </table>
+    </div>
+    <h1 style="color: rgb(171, 171, 255);margin-left: 530px;margin-top: 60px;">Additional Details</h1>
+    <hr style="background-color:rgb(171, 171, 255);height: 6px;border: none;width: 865px;margin-left: 250px;margin-top: 10px;">
+    <div id="additionaldetails">
+            <div class="additionaldetailitem">
+                <h3><a href="https://drive.google.com/file/d/10X6iNA8GaweJPslqEL4KGhlZDVLF-0ZR/view?usp=sharing">Resume</a></h3>
+            </div>
+            <div class="additionaldetailitem">
+                <h3>OnlineCourses</h3>
+                <ul>
+                    <li><a href="https://drive.google.com/file/d/1OXLJOuM5EuuvB-BkqtI8JX_yUCY04hnP/view?usp=drivesdk">NPTEL Python for data science</a></li>
+                    <li><a href="https://drive.google.com/file/d/1OeH6ei_R6NM1dYXOgtSRjgtMudjgOPh0/view?usp=drivesdk">NPTEL DBMS</a></li>
+                </ul>
+            </div>
+            <div class="additionaldetailitem">
+                <h3>Awards/Certifications</h3>
+                <ul>
+                    <li><a href="https://drive.google.com/file/d/1EEvs-e1N3fXv1AID992FKDzFOkBR3-hY/view?usp=drive_link">GATE CS Qualified(2024)</a></li>
+                    <li><a href="https://drive.google.com/file/d/1_f5mgkfkWWv7Vr-PQ3gf9wnnEd52xn-B/view?usp=drive_link">GATE DA Appeared(2024)</a></li>
+                </ul>
+            </div>
+    </div>
+</body>
+</html>
